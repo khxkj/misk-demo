@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>صالون مسك الجمال — نسخة تجريبية</title>
+<meta name="description" content="صالون مسك الجمال في المدينة المنورة — بشرة، شعر، مكياج، مايكروبليدنق. نسخة تجريبية.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--m:#E6157A;--a:#1EC8E8;--bg:#F4FEFF;--t:#1F1F2B}
+*{box-sizing:border-box}body{margin:0;font-family:Cairo,sans-serif;background:var(--bg);color:var(--t);line-height:1.7}
+a{color:inherit}img{max-width:100%;display:block}
+.badge{position:fixed;top:10px;left:10px;z-index:50;background:var(--a);color:#fff;font-weight:700;font-size:13px;padding:4px 12px;border-radius:20px;box-shadow:0 2px 8px #0002}
+header{position:sticky;top:0;z-index:40;background:#fffffff0;backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:2px solid var(--a)}
+header .brand{display:flex;gap:10px;align-items:center;font-weight:800;color:var(--m)}header .brand img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+nav{display:none;gap:18px}nav a{text-decoration:none;font-weight:600}
+.btn{display:inline-block;background:var(--m);color:#fff;border:0;border-radius:30px;padding:12px 26px;font:700 16px Cairo;cursor:pointer;text-decoration:none}
+.btn.alt{background:#fff;color:var(--m);border:2px solid var(--m)}
+.hero{position:relative;min-height:78vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(0deg,#1F1F2Bcc,#E6157A33),url(img/p02.jpg) center/cover}
+.hero div{padding:30px 20px 46px;max-width:760px}.hero h1{font-size:34px;margin:0 0 8px;line-height:1.3}.hero p{margin:0 0 18px;font-size:17px}
+section{padding:54px 18px;max-width:1100px;margin:auto}h2{color:var(--m);font-size:28px;margin:0 0 6px}h2+p.sub{margin:0 0 24px;color:#555}
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+.card{background:#fff;border-radius:18px;padding:20px;border-top:4px solid var(--a);box-shadow:0 4px 16px #1ec8e81a}.card h3{margin:0 0 6px;color:var(--m)}
+.team .card{text-align:center}.team .av{width:64px;height:64px;border-radius:50%;margin:0 auto 8px;background:linear-gradient(135deg,var(--m),var(--a));color:#fff;font-size:26px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.gal img{aspect-ratio:1;object-fit:cover;border-radius:12px;cursor:zoom-in}
+#lb{position:fixed;inset:0;background:#1F1F2Bee;display:none;align-items:center;justify-content:center;z-index:60}#lb.on{display:flex}#lb img{max-height:88vh;max-width:94vw;border-radius:10px}#lb button{position:absolute;top:14px;right:16px;background:var(--m);color:#fff;border:0;border-radius:50%;width:42px;height:42px;font-size:22px;cursor:pointer}
+.band{background:linear-gradient(135deg,var(--m),#b80f61);color:#fff;border-radius:22px;padding:30px 22px;text-align:center}.band h2{color:#fff}.band .btn{background:#fff;color:var(--m)}
+.hours{list-style:none;padding:0;margin:0}.hours li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed #1ec8e866}
+.ltr{direction:ltr;unicode-bidi:isolate;display:inline-block}
+iframe{width:100%;height:320px;border:0;border-radius:16px}
+footer{text-align:center;padding:26px;background:var(--t);color:#cfe;font-size:14px}
+@media(min-width:800px){nav{display:flex}.grid{grid-template-columns:repeat(3,1fr)}.gal{grid-template-columns:repeat(4,1fr)}.hero h1{font-size:46px}.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}}
+</style></head><body>
+<div class="badge" id="demoBadge">نسخة تجريبية / Demo</div>
+<header><div class="brand"><img src="img/logo.jpg" alt="شعار مسك الجمال" width="42" height="42">صالون مسك الجمال</div>
+<nav><a href="#services">الخدمات</a><a href="#team">الفريق</a><a href="#gallery">أعمالنا</a><a href="#courses">الدورات</a><a href="#book">الحجز</a><a href="#location">الموقع</a></nav>
+<button class="btn" onclick="openChat()" style="padding:8px 18px;font-size:14px">احجزي</button></header>
+
+<div class="hero" id="home"><div><h1>صالون مسك الجمال</h1><p>عناية بالبشرة والشعر، مكياج ومايكروبليدنق — في المدينة المنورة ⭐ 4.5 من 610 تقييم على Google</p>
+<button class="btn" id="bookBtn" onclick="openChat()">احجزي موعدك</button> <a class="btn alt" href="#services" style="background:#fff">خدماتنا</a></div></div>
+
+<section id="services"><h2>خدماتنا</h2><p class="sub">للاستفسار عن التفاصيل والأسعار تواصلي معنا على <a class="ltr" href="tel:+966598772864">059 877 2864</a></p>
+<div class="grid">
+<div class="card"><h3>العناية بالبشرة</h3><p>جلسات عناية بالبشرة بإشراف المختصة إيمان الزين.</p></div>
+<div class="card"><h3>العناية بالشعر</h3><p>صبغة، قص، استشوار وكولاجين.</p></div>
+<div class="card"><h3>المكياج</h3><p>مكياج المناسبات بأيدي مختصات المكياج.</p></div>
+<div class="card"><h3>مكياج العروس</h3><p>إطلالة متكاملة ليومك المميز.</p></div>
+<div class="card"><h3>المايكروبليدنق</h3><p>رسم الحواجب بتقنية المايكروبليدنق.</p></div>
+<div class="card"><h3>الحجز المسبق</h3><p>ننصح بالحجز المسبق. الدفع بالبطاقة وNFC متاح.</p></div>
+</div></section>
+
+<section id="team"><h2>فريقنا</h2><p class="sub">أسماء من تقييمات عميلاتنا</p>
+<div class="grid team">
+<div class="card"><div class="av">إ</div><h3>إيمان الزين</h3><p>المالكة — مختصة بشرة وشعر</p></div>
+<div class="card"><div class="av">ن</div><h3>نجاة</h3><p>مكياج</p></div>
+<div class="card"><div class="av">ن</div><h3>ندى</h3><p>مكياج</p></div>
+<div class="card"><div class="av">س</div><h3>سماح</h3><p>مايكروبليدنق</p></div>
+<div class="card"><div class="av">ل</div><h3>لينا</h3><p>فريق الصالون</p></div>
+</div></section>
+
+<section id="gallery"><h2>أعمالنا والصالون</h2><p class="sub">اضغطي على الصورة لتكبيرها</p>
+<div class="gal">
+<img src="img/p15.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p16.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p17.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p18.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p19.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p20.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p21.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p22.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p01.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p03.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p04.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p05.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p06.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p07.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p08.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p09.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p10.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p11.jpg" alt="صالون مسك الجمال" loading="lazy">
+<img src="img/p12.jpg" alt="صالون مسك الجمال" loading="lazy">
+</div></section>
+
+<section id="courses"><div class="band"><h2>الدورات والتدريب</h2><p>مهتمة بدورات التجميل؟ تواصلي معنا لمعرفة المتاح.</p>
+<a class="btn" href="tel:+966598772864">تواصلي معنا عن الدورات</a></div></section>
+
+<section id="book"><div class="two"><div><h2>احجزي موعدك</h2><p>اختاري الخدمة والمختصة (نجاة، ندى، سماح، لينا، إيمان الزين أو أي مختصة) والوقت المناسب عبر المساعدة الذكية.</p>
+<button class="btn" onclick="openChat()">ابدئي الحجز</button></div>
+<div class="card"><h3>ساعات العمل</h3><ul class="hours" id="hours">
+<li><span>الأحد – الأربعاء</span><span>٢ ظهراً – ١١ مساءً</span></li>
+<li><span>الخميس – الجمعة</span><span>١ ظهراً – ١١ مساءً</span></li>
+<li><span>السبت</span><span>٢ ظهراً – ١١:٣٠ مساءً</span></li></ul></div></div></section>
+
+<section id="location"><h2>موقعنا</h2><p class="sub">المدينة المنورة 42312 — FHRV+22</p>
+<iframe loading="lazy" title="خريطة صالون مسك الجمال" src="https://maps.google.com/maps?q=FHRV%2B22%20Madinah&output=embed"></iframe>
+<p>📞 <a class="ltr" href="tel:+966598772864">059 877 2864</a> · انستقرام <a class="ltr" href="https://instagram.com/mesk_beauty" target="_blank" rel="noopener">@mesk_beauty</a> · سناب <span class="ltr">royal_stylee</span></p></section>
+
+<footer>صالون مسك الجمال — نسخة تجريبية للعرض فقط · الحجوزات هنا تجريبية ولا تؤكد موعداً حقيقياً</footer>
+<div id="lb" onclick="if(event.target===this)this.classList.remove('on')"><button onclick="document.getElementById('lb').classList.remove('on')" aria-label="إغلاق">×</button><img alt=""></div>
+<script>
+document.querySelectorAll('.gal img').forEach(function(i){i.onclick=function(){var l=document.getElementById('lb');l.querySelector('img').src=i.src;l.classList.add('on')}});
+function openChat(){if(window.voiceflow&&window.voiceflow.chat){window.voiceflow.chat.open()}else{window.__openWhenReady=true}}
+</script>
+<script type="text/javascript">
+(function(d,t){var v=d.createElement(t),s=d.getElementsByTagName(t)[0];v.onload=function(){window.voiceflow.chat.load({verify:{projectID:'6adf92f8ca53e3c64a004603'},url:'https://general-runtime.voiceflow.com',voice:{url:'https://runtime-api.voiceflow.com'},environmentID:'main',versionVariant:'published'}).then(function(){if(window.__openWhenReady)window.voiceflow.chat.open()})};v.src="https://cdn.voiceflow.com/widget-next/bundle.mjs";v.type="text/javascript";s.parentNode.insertBefore(v,s)})(document,'script');
+</script>
+</body></html>
